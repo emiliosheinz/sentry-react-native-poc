@@ -24,6 +24,13 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+import * as Sentry from '@sentry/react-native';
+
+Sentry.init({
+  dsn:
+    'https://b12e88b387c345268ab0a616c625f885@o275841.ingest.sentry.io/5263511',
+});
+
 const App: () => React$Node = () => {
   return (
     <>
